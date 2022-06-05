@@ -37,6 +37,9 @@ def switch_enable(gid: str, new_state: bool) -> None:
     init_data(gid)
     
     settings = load_json(data_path)
+    if settings[gid]["enable"] != new_state:
+        clear_cd(gid)
+    
     settings[gid]["enable"] = new_state
     
     save_json(data_path, settings)
@@ -68,7 +71,7 @@ def check_cd(gid: str) -> int:
         - 冷却中，返回剩余时间(秒)
     '''
     try:
-        rst_cd = cd_data.get(gid) - time.time()
+        rst_cd = int(cd_data[gid] - time.time())
     except KeyError:
         rst_cd = 0
     

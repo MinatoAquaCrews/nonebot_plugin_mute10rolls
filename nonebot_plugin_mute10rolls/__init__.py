@@ -79,7 +79,7 @@ async def _(matcher: Matcher, event: GroupMessageEvent, args: Message = CommandA
             await matcher.finish(f"技能冷却中，剩余 {cd}s\n需管理员通过[修改禁言cd :seconds]可修改禁言冷却时间")
         else:
             mute_time, msg = await one_go(event)
-            await Matcher.send(msg)
+            await matcher.send(msg)
             if mute_time > 0:
                 is_botadmin = await is_BotAdmin(event.group_id)
                 if not is_botadmin:

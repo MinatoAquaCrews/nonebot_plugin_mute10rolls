@@ -16,7 +16,7 @@ _🤐 禁言十连 🤐_
     <img src="https://img.shields.io/badge/nonebot2-2.0.0beta.2+-green">
   </a>
   
-  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_mute10rolls/releases/tag/v0.1.0">
+  <a href="https://github.com/MinatoAquaCrews/nonebot_plugin_mute10rolls/releases/tag/v0.1.0a2">
     <img src="https://img.shields.io/github/v/release/MinatoAquaCrews/nonebot_plugin_mute10rolls?color=orange">
   </a>
 
@@ -28,11 +28,11 @@ _🤐 禁言十连 🤐_
 
 ## 版本
 
-v0.1.0a1
+v0.1.0a2
 
 ⚠ 适配nonebot2-2.0.0beta.2+
 
-[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_mute10rolls/releases/tag/v0.1.0)
+[更新日志](https://github.com/MinatoAquaCrews/nonebot_plugin_mute10rolls/releases/tag/v0.1.0a2)
 
 ## 安装
 
@@ -61,16 +61,18 @@ v0.1.0a1
 
     ⚠ 注意：开启禁言十连功能使用正式版cd，BOT须有管理员权限才可禁言，否则仅抽奖。即使狗管理关闭禁言十连功能，依然能抽奖，此时使用体验版cd，且无论BOT有无管理员权限，均不可禁言
 
-- [ ] TODO 禁言排行榜。
+- [x] 统计本日群禁言数据，每周自动发布上周群禁言数据。
 
 ## 命令
 
 1. 十连抽取口球套餐：[禁言十连]；
 
-2. [管理员权限] 开启/关闭禁言十连：[开启|启用|关闭|禁用]禁言十连；
+2. 查看本日群禁言数据统计：[禁言统计]；
+
+3. [管理员权限] 开启/关闭禁言十连：[开启|启用|关闭|禁用]禁言十连；
 
     ⚠ 注意：初始状态下，群禁言十连功能默认关闭。
 
-3. [管理员权限] 修改禁言冷却：[修改禁言cd/冷却][seconds]，例如：修改禁言cd 60。
+4. [管理员权限] 修改禁言冷却：[修改禁言cd/冷却][seconds]，例如：修改禁言cd 60。
 
     ⚠ 注意：冷却时间10~120，默认体验版cd比正式版cd较长。建议管理员合理设置防止刷屏与抖M群友
